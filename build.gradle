@@ -43,3 +43,8 @@ test {
         events "passed", "skipped", "failed"
     }
 }
+
+detekt {
+    config = files('config/detekt-config.yml')
+    buildUponDefaultConfig = true
+}
