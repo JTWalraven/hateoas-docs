@@ -1,3 +1,11 @@
+title: IANA Link Relation Types
+description: The standard IANA link relations.
+reference: https://www.iana.org/assignments/link-relations/link-relations.xhtml
+formats:
+  - text
+  - html
+  - csv
+  - pdf
 link-relations:
   - name: about
     description: Refers to a resource that is the subject of the link's context.
