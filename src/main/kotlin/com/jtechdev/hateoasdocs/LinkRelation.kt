@@ -1,4 +1,4 @@
-package com.jtwalraven.hateoasdocs
+package com.jtechdev.hateoasdocs
 
 /**
  * Contains the information describing a link relation.
