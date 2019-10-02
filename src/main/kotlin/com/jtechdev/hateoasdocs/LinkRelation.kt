@@ -9,7 +9,7 @@ package com.jtechdev.hateoasdocs
  */
 data class LinkRelation(
     val name: String,
-    val description: String,
-    val reference: String,
-    val notes: String
+    val description: String?,
+    val reference: String?,
+    val notes: String?
 )

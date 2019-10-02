@@ -1,5 +1,7 @@
 package com.jtechdev.hateoasdocs
 
+import com.fasterxml.jackson.annotation.JsonProperty
+
 /**
  * A document containing link relation descriptions.
  *
@@ -12,5 +14,5 @@ data class LinkRelationsDocument(
     val description: String,
     val reference: String,
     val formats: List<String>,
-    val linkRelations: List<LinkRelation>
+    @JsonProperty("link-relations") val linkRelations: List<LinkRelation> = ArrayList()
 )

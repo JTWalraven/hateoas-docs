@@ -1,475 +1,472 @@
 title: IANA Link Relation Types
 description: The standard IANA link relations.
-reference: https://www.iana.org/assignments/link-relations/link-relations.xhtml
+reference: 'https://www.iana.org/assignments/link-relations/link-relations.xhtml'
 formats:
   - text
   - html
   - csv
-  - pdf
 link-relations:
   - name: about
     description: Refers to a resource that is the subject of the link's context.
-    reference: [RFC6903], section 2
+    reference: '[RFC6903], section 2'
+    notes: Used to link about pages.
 
   - name: alternate
     description: Refers to a substitute for this context
-    reference: [http://www.w3.org/TR/html5/links.html#link-type-alternate]
+    reference: '[http://www.w3.org/TR/html5/links.html#link-type-alternate]'
 
   - name: appendix
     description: Refers to an appendix.
-    reference: [http://www.w3.org/TR/1999/REC-html401-19991224]
+    reference: '[http://www.w3.org/TR/1999/REC-html401-19991224]'
 
   - name: apple-touch-icon
     description: Refers to an icon for the context. Synonym for icon.
-    reference: [https://developer.apple.com/library/archive/documentation/AppleApplications/reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html#//apple_ref/doc/uid/TP40002051-CH3-SW3]
+    reference: '[https://developer.apple.com/library/archive/documentation/AppleApplications/reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html#//apple_ref/doc/uid/TP40002051-CH3-SW3]'
 
   - name: apple-touch-startup-image
     description: Refers to a launch screen for the context.
-    reference: [https://developer.apple.com/library/archive/documentation/AppleApplications/reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html#//apple_ref/doc/uid/TP40002051-CH3-SW3]
+    reference: '[https://developer.apple.com/library/archive/documentation/AppleApplications/reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html#//apple_ref/doc/uid/TP40002051-CH3-SW3]'
 
   - name: archives
     description: Refers to a collection of records, documents, or other materials of historical interest.
-    reference: [http://www.w3.org/TR/2011/WD-html5-20110113/links.html#rel-archives]
+    reference: '[http://www.w3.org/TR/2011/WD-html5-20110113/links.html#rel-archives]'
 
   - name: author
     description: Refers to the context's author.
-    reference: [http://www.w3.org/TR/html5/links.html#link-type-author]
+    reference: '[http://www.w3.org/TR/html5/links.html#link-type-author]'
 
   - name: blocked-by
     description: Identifies the entity that blocks access to a resource following receipt of a legal demand.
-    reference: [RFC7725]
+    reference: '[RFC7725]'
 
   - name: bookmark
     description: Gives a permanent link to use for bookmarking purposes.
-    reference: [http://www.w3.org/TR/html5/links.html#link-type-bookmark]
+    reference: '[http://www.w3.org/TR/html5/links.html#link-type-bookmark]'
 
   - name: canonical
     description: Designates the preferred version of a resource (the IRI and its contents).
-    reference: [RFC6596]
+    reference: '[RFC6596]'
 
   - name: chapter
     description: Refers to a chapter in a collection of resources.
-    reference: [http://www.w3.org/TR/1999/REC-html401-19991224]
+    reference: '[http://www.w3.org/TR/1999/REC-html401-19991224]'
 
   - name: cite-as
     description: Indicates that the link target is preferred over the link context for the purpose of permanent citation.
-    reference: [RFC8574]
+    reference: '[RFC8574]'
 
   - name: collection
     description: The target IRI points to a resource which represents the collection resource for the context IRI.
-    reference: [RFC6573]
+    reference: '[RFC6573]'
 
   - name: contents
     description: Refers to a table of contents.
-    reference: [http://www.w3.org/TR/1999/REC-html401-19991224]
+    reference: '[http://www.w3.org/TR/1999/REC-html401-19991224]'
 
   - name: convertedFrom
     description: 'The document linked to was later converted to the document that contains this link relation.  For example, an RFC can have a link to the Internet-Draft that became the RFC; in that case, the link relation would be "convertedFrom".'
-    reference: [RFC7991]
+    reference: '[RFC7991]'
     notes: 'This relation is different than "predecessor-version" in that "predecessor-version" is for items in a version control system.  It is also different than "previous" in that this relation is used for converted resources, not those that are part of a sequence of resources.'
 
   - name: copyright
-    description: 'Refers to a copyright statement that applies to the link's context.'
-    reference: [http://www.w3.org/TR/1999/REC-html401-19991224]
+    description: "Refers to a copyright statement that applies to the link's context."
+    reference: '[http://www.w3.org/TR/1999/REC-html401-19991224]'
 
   - name: create-form
     description: The target IRI points to a resource where a submission form can be obtained.
-    reference: [RFC6861]
+    reference: '[RFC6861]'
 
   - name: current
     description: 'Refers to a resource containing the most recent item(s) in a collection of resources.'
-    reference: [RFC5005]
+    reference: '[RFC5005]'
 
   - name: describedby
-    description: 'Refers to a resource providing information about the link's context.'
-    reference: [http://www.w3.org/TR/powder-dr/#assoc-linking]
+    description: "Refers to a resource providing information about the link's context."
+    reference: '[http://www.w3.org/TR/powder-dr/#assoc-linking]'
 
   - name: describes
-    description: 'The relationship A 'describes' B asserts that resource A provides a description of resource B. There are no constraints on the format or representation of either A or B, neither are there any further constraints on either resource.'
-    reference: [RFC6892]
-    notes: 'This link relation type is the inverse of the 'describedby' relation type.  While 'describedby' establishes a relation from the described resource back to the resource that describes it, 'describes' established a relation from the describing resource to the resource it describes.  If B is 'describedby' A, then A 'describes' B.'
+    description: "The relationship A 'describes' B asserts that resource A provides a description of resource B. There are no constraints on the format or representation of either A or B, neither are there any further constraints on either resource."
+    reference: '[RFC6892]'
+    notes: "This link relation type is the inverse of the 'describedby' relation type.  While 'describedby' establishes a relation from the described resource back to the resource that describes it, 'describes' established a relation from the describing resource to the resource it describes.  If B is 'describedby' A, then A 'describes' B."
 
   - name: disclosure
-    description: 'Refers to a list of patent disclosures made with respect to  material for which 'disclosure' relation is specified.'
-    reference: [RFC6579]
+    description: "Refers to a list of patent disclosures made with respect to  material for which 'disclosure' relation is specified."
+    reference: '[RFC6579]'
 
   - name: dns-prefetch
     description: 'Used to indicate an origin that will be used to fetch required  resources for the link context, and that the user agent ought to resolve  as early as possible.'
-    reference: [https://www.w3.org/TR/resource-hints/]
+    reference: '[https://www.w3.org/TR/resource-hints/]'
 
   - name: duplicate
     description: 'Refers to a resource whose available representations are byte-for-byte identical with the corresponding representations of the context IRI.'
-    reference: [RFC6249]
+    reference: '[RFC6249]'
     notes: 'This relation is for static resources.  That is, an HTTP GET request on any duplicate will return the same representation.  It does not make sense for dynamic or POSTable resources and should not be used for them.'
 
   - name: edit
-    description: 'Refers to a resource that can be used to edit the link's context.'
-    reference: [RFC5023]
+    description: "Refers to a resource that can be used to edit the link's context."
+    reference: '[RFC5023]'
 
   - name: edit-form
     description: 'The target IRI points to a resource where a submission form for editing associated resource can be obtained.'
-    reference: [RFC6861]
+    reference: '[RFC6861]'
 
   - name: edit-media
-    description: 'Refers to a resource that can be used to edit media associated with the link's context.'
-    reference: [RFC5023]
+    description: "Refers to a resource that can be used to edit media associated with the link's context."
+    reference: '[RFC5023]'
 
   - name: enclosure
     description: 'Identifies a related resource that is potentially large and might require special handling.'
-    reference: [RFC4287]
+    reference: '[RFC4287]'
 
   - name: external
     description: Refers to a resource that is not part of the same site as the current context.
-    reference: [https://html.spec.whatwg.org/multipage/links.html#link-type-external]
+    reference: '[https://html.spec.whatwg.org/multipage/links.html#link-type-external]'
 
   - name: first
     description: 'An IRI that refers to the furthest preceding resource in a series of resources.'
-    reference: [RFC8288]
+    reference: '[RFC8288]'
     notes: 'This relation type registration did not indicate a reference.  Originally requested by Mark Nottingham in December 2004.'
 
   - name: glossary
     description: Refers to a glossary of terms.
-    reference: [http://www.w3.org/TR/1999/REC-html401-19991224]
+    reference: '[http://www.w3.org/TR/1999/REC-html401-19991224]'
 
   - name: help
     description: Refers to context-sensitive help.
-    reference: [http://www.w3.org/TR/html5/links.html#link-type-help]
+    reference: '[http://www.w3.org/TR/html5/links.html#link-type-help]'
 
   - name: hosts
     description: 'Refers to a resource hosted by the server indicated by the link context.'
-    reference: [RFC6690]
+    reference: '[RFC6690]'
     notes: 'This relation is used in CoRE where links are retrieved as a "/.well-known/core" resource representation, and is the default relation type in the CoRE Link Format.'
 
   - name: hub
     description: 'Refers to a hub that enables registration for notification of updates to the context.'
-    reference: [https://www.w3.org/TR/websub/]
+    reference: '[https://www.w3.org/TR/websub/]'
     notes: This relation type was requested by Brett Slatkin.
 
   - name: icon
     description: 'Refers to an icon representing the link''s context.'
-    reference: [http://www.w3.org/TR/html5/links.html#link-type-icon]
+    reference: '[http://www.w3.org/TR/html5/links.html#link-type-icon]'
 
   - name: index
     description: Refers to an index.
-    reference: [http://www.w3.org/TR/1999/REC-html401-19991224]
+    reference: '[http://www.w3.org/TR/1999/REC-html401-19991224]'
 
   - name: intervalAfter
     description: refers to a resource associated with a time interval that ends before the beginning of the time interval associated with the context resource
-    reference: [https://www.w3.org/TR/owl-time/#time:intervalAfter] section 4.2.21
+    reference: '[https://www.w3.org/TR/owl-time/#time:intervalAfter] section 4.2.21'
 
   - name: intervalBefore
     description: refers to a resource associated with a time interval that begins after the end of the time interval associated with the context resource
-    reference: [https://www.w3.org/TR/owl-time/#time:intervalBefore] section 4.2.22
+    reference: '[https://www.w3.org/TR/owl-time/#time:intervalBefore] section 4.2.22'
 
   - name: intervalContains
     description: refers to a resource associated with a time interval that begins after the beginning of the time interval associated with the context resource, and ends before the end of the time interval associated with the context resource
-    reference: [https://www.w3.org/TR/owl-time/#time:intervalContains] section 4.2.23
+    reference: '[https://www.w3.org/TR/owl-time/#time:intervalContains] section 4.2.23'
 
   - name: intervalDisjoint
     description: refers to a resource associated with a time interval that begins after the end of the time interval associated with the context resource, or ends before the beginning of the time interval associated with the context resource
-    reference: [https://www.w3.org/TR/owl-time/#time:intervalDisjoint] section 4.2.24
+    reference: '[https://www.w3.org/TR/owl-time/#time:intervalDisjoint] section 4.2.24'
 
   - name: intervalDuring
     description: refers to a resource associated with a time interval that begins before the beginning of the time interval associated with the context resource, and ends after the end of the time interval associated with the context resource
-    reference: [https://www.w3.org/TR/owl-time/#time:intervalDuring] section 4.2.25
+    reference: '[https://www.w3.org/TR/owl-time/#time:intervalDuring] section 4.2.25'
 
   - name: intervalEquals
     description: refers to a resource associated with a time interval whose beginning coincides with the beginning of the time interval associated with the context resource, and whose end coincides with the end of the time interval associated with the context resource
-    reference: [https://www.w3.org/TR/owl-time/#time:intervalEquals] section 4.2.26
+    reference: '[https://www.w3.org/TR/owl-time/#time:intervalEquals] section 4.2.26'
 
   - name: intervalFinishedBy
     description: refers to a resource associated with a time interval that begins after the beginning of the time interval associated with the context resource, and whose end coincides with the end of the time interval associated with the context resource
-    reference: [https://www.w3.org/TR/owl-time/#time:intervalFinishedBy] section 4.2.27
+    reference: '[https://www.w3.org/TR/owl-time/#time:intervalFinishedBy] section 4.2.27'
 
   - name: intervalFinishes
     description: refers to a resource associated with a time interval that begins before the beginning of the time interval associated with the context resource, and whose end coincides with the end of the time interval associated with the context resource
-    reference: [https://www.w3.org/TR/owl-time/#time:intervalFinishes] section 4.2.28
+    reference: '[https://www.w3.org/TR/owl-time/#time:intervalFinishes] section 4.2.28'
 
   - name: intervalIn
     description: refers to a resource associated with a time interval that begins before or is coincident with the beginning of the time interval associated with the context resource, and ends after or is coincident with the end of the time interval associated with the context resource
-    reference: [https://www.w3.org/TR/owl-time/#time:intervalIn] section 4.2.29
+    reference: '[https://www.w3.org/TR/owl-time/#time:intervalIn] section 4.2.29'
 
   - name: intervalMeets
     description: refers to a resource associated with a time interval whose beginning coincides with the end of the time interval associated with the context resource
-    reference: [https://www.w3.org/TR/owl-time/#time:intervalMeets] section 4.2.30
+    reference: '[https://www.w3.org/TR/owl-time/#time:intervalMeets] section 4.2.30'
 
   - name: intervalMetBy
     description: refers to a resource associated with a time interval whose end coincides with the beginning of the time interval associated with the context resource
-    reference: [https://www.w3.org/TR/owl-time/#time:intervalMetBy] section 4.2.31
+    reference: '[https://www.w3.org/TR/owl-time/#time:intervalMetBy] section 4.2.31'
 
   - name: intervalOverlappedBy
     description: refers to a resource associated with a time interval that begins before the beginning of the time interval associated with the context resource, and ends after the beginning of the time interval associated with the context resource
-    reference: [https://www.w3.org/TR/owl-time/#time:intervalOverlappedBy] section 4.2.32
+    reference: '[https://www.w3.org/TR/owl-time/#time:intervalOverlappedBy] section 4.2.32'
 
   - name: intervalOverlaps
     description: refers to a resource associated with a time interval that begins before the end of the time interval associated with the context resource, and ends after the end of the time interval associated with the context resource
-    reference: [https://www.w3.org/TR/owl-time/#time:intervalOverlaps] section 4.2.33
+    reference: '[https://www.w3.org/TR/owl-time/#time:intervalOverlaps] section 4.2.33'
 
   - name: intervalStartedBy
     description: refers to a resource associated with a time interval whose beginning coincides with the beginning of the time interval associated with the context resource, and ends before the end of the time interval associated with the context resource
-    reference: [https://www.w3.org/TR/owl-time/#time:intervalStartedBy] section 4.2.34
+    reference: '[https://www.w3.org/TR/owl-time/#time:intervalStartedBy] section 4.2.34'
 
   - name: intervalStarts
     description: refers to a resource associated with a time interval whose beginning coincides with the beginning of the time interval associated with the context resource, and ends after the end of the time interval associated with the context resource
-    reference: [https://www.w3.org/TR/owl-time/#time:intervalStarts] section 4.2.35
+    reference: '[https://www.w3.org/TR/owl-time/#time:intervalStarts] section 4.2.35'
 
   - name: item
     description: The target IRI points to a resource that is a member of the collection represented by the context IRI.
-    reference: [RFC6573]
+    reference: '[RFC6573]'
 
   - name: last
     description: 'An IRI that refers to the furthest following resource in a series of resources.'
-    reference: [RFC8288]
+    reference: '[RFC8288]'
     notes: 'This relation type registration did not indicate a reference. Originally requested by Mark Nottingham in December 2004.'
 
   - name: latest-version
     description: 'Points to a resource containing the latest (e.g., current) version of the context.'
-    reference: [RFC5829]
+    reference: '[RFC5829]'
 
   - name: license
     description: Refers to a license associated with this context.
-    reference: [RFC4946]
+    reference: '[RFC4946]'
     notes: 'For implications of use in HTML, see:  http://www.w3.org/TR/html5/links.html#link-type-license'
 
   - name: lrdd
     description: "Refers to further information about the link's context, expressed as a LRDD (\"Link-based Resource Descriptor Document\") resource.  See [RFC6415] for information about processing this relation type in host-meta documents. When used elsewhere, it refers to additional links and other metadata. Multiple instances indicate additional LRDD resources. LRDD resources MUST have an \"application/xrd+xml\" representation, and MAY have others."
-    reference: [RFC6415]
+    reference: '[RFC6415]'
 
   - name: manifest
     description: Links to a manifest file for the context.
-    reference: [https://www.w3.org/TR/appmanifest/#using-a-link-element-to-link-to-a-manifest]
+    reference: '[https://www.w3.org/TR/appmanifest/#using-a-link-element-to-link-to-a-manifest]'
 
   - name: mask-icon
     description: Refers to a mask that can be applied to the icon for the context.
-    reference: [https://developer.apple.com/library/archive/documentation/AppleApplications/reference/SafariWebContent/pinnedTabs/pinnedTabs.html#//apple_ref/doc/uid/TP40002051-CH18-SW1]
+    reference: '[https://developer.apple.com/library/archive/documentation/AppleApplications/reference/SafariWebContent/pinnedTabs/pinnedTabs.html#//apple_ref/doc/uid/TP40002051-CH18-SW1]'
 
   - name: memento
     description: The Target IRI points to a Memento, a fixed resource that will not change state anymore.
-    reference: [RFC7089]
+    reference: '[RFC7089]'
     notes: 'A Memento for an Original Resource is a resource that encapsulates a prior state of the Original Resource.'
 
   - name: micropub
     description: Links to the context's Micropub endpoint.
-    reference: [https://www.w3.org/TR/micropub/#endpoint-discovery-p-1]
+    reference: '[https://www.w3.org/TR/micropub/#endpoint-discovery-p-1]'
 
   - name: modulepreload
     description: Refers to a module that the user agent is to preemptively fetch and store for use in the current context.
-    reference: [https://html.spec.whatwg.org/multipage/links.html#link-type-modulepreload]
+    reference: '[https://html.spec.whatwg.org/multipage/links.html#link-type-modulepreload]'
 
   - name: monitor
     description: Refers to a resource that can be used to monitor changes in an HTTP resource.
-    reference: [RFC5989]
+    reference: '[RFC5989]'
 
   - name: monitor-group
     description: Refers to a resource that can be used to monitor changes in a specified group of HTTP resources.
-    reference: [RFC5989]
+    reference: '[RFC5989]'
 
   - name: next
     description: Indicates that the link's context is a part of a series, and that the next in the series is the link target.
-    reference: [http://www.w3.org/TR/html5/links.html#link-type-next]
+    reference: '[http://www.w3.org/TR/html5/links.html#link-type-next]'
 
   - name: next-archive
     description: Refers to the immediately following archive resource.
-    reference: [RFC5005]
+    reference: '[RFC5005]'
 
   - name: nofollow
     description: Indicates that the context’s original author or publisher does not endorse the link target.
-    reference: [http://www.w3.org/TR/html5/links.html#link-type-nofollow]
+    reference: '[http://www.w3.org/TR/html5/links.html#link-type-nofollow]'
 
   - name: noopener
     description: Indicates that any newly created top-level browsing context which results from following the link will not be an auxiliary browsing context.
-    reference: [https://html.spec.whatwg.org/multipage/links.html#link-type-noopener]
+    reference: '[https://html.spec.whatwg.org/multipage/links.html#link-type-noopener]'
 
   - name: noreferrer
     description: Indicates that no referrer information is to be leaked when following the link.
-    reference: [http://www.w3.org/TR/html5/links.html#link-type-noreferrer]
+    reference: '[http://www.w3.org/TR/html5/links.html#link-type-noreferrer]'
 
   - name: opener
     description: Indicates that any newly created top-level browsing context which results from following the link will be an auxiliary browsing context.
-    reference: [https://html.spec.whatwg.org/multipage/links.html#link-type-opener]
+    reference: '[https://html.spec.whatwg.org/multipage/links.html#link-type-opener]'
 
   - name: openid2.local_id
     description: Refers to an OpenID Authentication server on which the context relies for an assertion that the end user controls an Identifier.
-    reference: [https://openid.net/specs/openid-authentication-2_0.html#rfc.section.7.3.3]
+    reference: '[https://openid.net/specs/openid-authentication-2_0.html#rfc.section.7.3.3]'
 
   - name: openid2.provider
     description: Refers to a resource which accepts OpenID Authentication protocol messages for the context.
-    reference: [https://openid.net/specs/openid-authentication-2_0.html#rfc.section.7.3.3]
+    reference: '[https://openid.net/specs/openid-authentication-2_0.html#rfc.section.7.3.3]'
 
   - name: original
     description: The Target IRI points to an Original Resource.
-    reference: [RFC7089]
+    reference: '[RFC7089]'
     notes: 'An Original Resource is a resource that exists or used to exist, and for which access to one of its prior states may be required.'
 
   - name: P3Pv1
     description: Refers to a P3P privacy policy for the context.
-    reference: [https://www.w3.org/TR/P3P/#syntax_link]
+    reference: '[https://www.w3.org/TR/P3P/#syntax_link]'
 
   - name: payment
     description: Indicates a resource where payment is accepted.
-    reference: [RFC8288]
+    reference: '[RFC8288]'
     notes: 'This relation type registration did not indicate a reference.  Requested by Joshua Kinberg and Robert Sayre.  It is meant as a general way to facilitate acts of payment, and thus this specification makes no assumptions on the type of payment or transaction protocol.  Examples may include a web page where donations are accepted or where goods and services are available for purchase. rel="payment" is not intended to initiate an automated transaction.  In Atom documents, a link element with a rel="payment" attribute may exist at the feed/channel level and/or the entry/item level.  For example, a rel="payment" link at the feed/channel level may point to a "tip jar" URI, whereas an entry/ item containing a book review may include a rel="payment" link that points to the location where the book may be purchased through an online retailer.'
 
   - name: pingback
     description: Gives the address of the pingback resource for the link context.
-    reference: [http://www.hixie.ch/specs/pingback/pingback]
+    reference: '[http://www.hixie.ch/specs/pingback/pingback]'
 
   - name: preconnect
     description: 'Used to indicate an origin that will be used to fetch required  resources for the link context. Initiating an early connection, which  includes the DNS lookup, TCP handshake, and optional TLS negotiation,  allows the user agent to mask the high latency costs of establishing a  connection.'
-    reference: [https://www.w3.org/TR/resource-hints/]
+    reference: '[https://www.w3.org/TR/resource-hints/]'
 
   - name: predecessor-version
     description: 'Points to a resource containing the predecessor version in the version history.'
-    reference: [RFC5829]
+    reference: '[RFC5829]'
 
   - name: prefetch
     description: 'The prefetch link relation type is used to identify a resource  that might be required by the next navigation from the link context, and  that the user agent ought to fetch, such that the user agent can deliver a  faster response once the resource is requested in the future.'
-    reference: [http://www.w3.org/TR/resource-hints/]
+    reference: '[http://www.w3.org/TR/resource-hints/]'
 
   - name: preload
-    description: 'Refers to a resource that should be loaded early in the  processing of the link's context, without blocking rendering.'
-    reference: [http://www.w3.org/TR/preload/]
+    description: "Refers to a resource that should be loaded early in the  processing of the link's context, without blocking rendering."
+    reference: '[http://www.w3.org/TR/preload/]'
     notes: Additional target attributes establish the detailed fetch properties of the link.
 
   - name: prerender
     description: 'Used to identify a resource that might be required by the next  navigation from the link context, and that the user agent ought to fetch  and execute, such that the user agent can deliver a faster response once  the resource is requested in the future.'
-    reference: [https://www.w3.org/TR/resource-hints/]
+    reference: '[https://www.w3.org/TR/resource-hints/]'
 
   - name: prev
-    description: 'Indicates that the link's context is a part of a series, and that the previous in the series is the link target.'
-    reference: [http://www.w3.org/TR/html5/links.html#link-type-prev]
+    description: "Indicates that the link's context is a part of a series, and that the previous in the series is the link target."
+    reference: '[http://www.w3.org/TR/html5/links.html#link-type-prev]'
 
   - name: preview
     description: 'Refers to a resource that provides a preview of the link''s context.'
-    reference: [RFC6903], section 3
+    reference: '[RFC6903], section 3'
 
   - name: previous
     description: 'Refers to the previous resource in an ordered series of resources.  Synonym for "prev".'
-    reference: [http://www.w3.org/TR/1999/REC-html401-19991224]
+    reference: '[http://www.w3.org/TR/1999/REC-html401-19991224]'
 
   - name: prev-archive
     description: Refers to the immediately preceding archive resource.
-    reference: [RFC5005]
+    reference: '[RFC5005]'
 
   - name: privacy-policy
     description: 'Refers to a privacy policy associated with the link''s context.'
-    reference: [RFC6903], section 4
+    reference: '[RFC6903], section 4'
 
   - name: profile
     description: 'Identifying that a resource representation conforms to a certain profile, without affecting the non-profile semantics of the resource representation.'
-    reference: [RFC6906]
+    reference: '[RFC6906]'
     notes: 'Profile URIs are primarily intended to be used as identifiers, and thus clients SHOULD NOT indiscriminately access profile URIs.'
 
   - name: related
     description: Identifies a related resource.
-    reference: [RFC4287]
+    reference: '[RFC4287]'
 
   - name: restconf
     description: 'Identifies the root of RESTCONF API as configured on this HTTP server. The "restconf" relation defines the root of the API defined in RFC8040. Subsequent revisions of RESTCONF will use alternate relation values to support  protocol versioning.'
-    reference: [RFC8040]
+    reference: '[RFC8040]'
 
   - name: replies
     description: 'Identifies a resource that is a reply to the context of the link.'
-    reference: [RFC4685]
+    reference: '[RFC4685]'
 
   - name: search
-    description: 'Refers to a resource that can be used to search through the link's context and related resources.'
-    reference: [http://www.opensearch.org/Specifications/OpenSearch/1.1]
+    description: "Refers to a resource that can be used to search through the link's context and related resources."
+    reference: '[http://www.opensearch.org/Specifications/OpenSearch/1.1]'
 
   - name: section
     description: Refers to a section in a collection of resources.
-    reference: [http://www.w3.org/TR/1999/REC-html401-19991224]
+    reference: '[http://www.w3.org/TR/1999/REC-html401-19991224]'
 
   - name: self
     description: 'Conveys an identifier for the link''s context.'
-    reference: [RFC4287]
+    reference: '[RFC4287]'
 
   - name: service
     description: 'Indicates a URI that can be used to retrieve a service document.'
-    reference: [RFC5023]
+    reference: '[RFC5023]'
     notes: 'When used in an Atom document, this relation type specifies Atom Publishing Protocol service documents by default.  Requested by James Snell.'
 
   - name: service-desc
     description: 'Identifies service description for the context that is primarily intended for consumption by machines.'
-    reference: [RFC8631]
+    reference: '[RFC8631]'
 
   - name: service-doc
     description: 'Identifies service documentation for the context that is primarily intended for human consumption.'
-    reference: [RFC8631]
+    reference: '[RFC8631]'
 
   - name: service-meta
     description: 'Identifies general metadata for the context that is primarily intended for consumption by machines.'
-    reference: [RFC8631]
+    reference: '[RFC8631]'
 
   - name: start
     description: 'Refers to the first resource in a collection of resources.'
-    reference: [http://www.w3.org/TR/1999/REC-html401-19991224]
+    reference: '[http://www.w3.org/TR/1999/REC-html401-19991224]'
 
   - name: status
-    description: 'Identifies a resource that represents the context's status.'
-    reference: [RFC8631]
+    description: "Identifies a resource that represents the context's status."
+    reference: '[RFC8631]'
 
   - name: stylesheet
     description: Refers to a stylesheet.
-    reference: [http://www.w3.org/TR/html5/links.html#link-type-stylesheet]
+    reference: '[http://www.w3.org/TR/html5/links.html#link-type-stylesheet]'
 
   - name: subsection
     description: 'Refers to a resource serving as a subsection in a collection of resources.'
-    reference: [http://www.w3.org/TR/1999/REC-html401-19991224]
+    reference: '[http://www.w3.org/TR/1999/REC-html401-19991224]'
 
   - name: successor-version
     description: 'Points to a resource containing the successor version in the version history.'
-    reference: [RFC5829]
+    reference: '[RFC5829]'
 
   - name: sunset
-    description: 'Identifies a resource that provides information about the context's retirement policy.'
-    reference: [RFC8594]
+    description: "Identifies a resource that provides information about the context's retirement policy."
+    reference: '[RFC8594]'
 
   - name: tag
     description: 'Gives a tag (identified by the given address) that applies to the current document.'
-    reference: [http://www.w3.org/TR/html5/links.html#link-type-tag]
+    reference: '[http://www.w3.org/TR/html5/links.html#link-type-tag]'
 
   - name: terms-of-service
     description: 'Refers to the terms of service associated with the link''s context.'
-    reference: [RFC6903], section 5
+    reference: '[RFC6903], section 5'
 
   - name: timegate
     description: The Target IRI points to a TimeGate for an Original Resource.
-    reference: [RFC7089]
+    reference: '[RFC7089]'
     notes: 'A TimeGate for an Original Resource is a resource that is capable of datetime negotiation to support access to prior states of the Original Resource.'
 
   - name: timemap
     description: The Target IRI points to a TimeMap for an Original Resource.
-    reference: [RFC7089]
+    reference: '[RFC7089]'
     notes: 'A TimeMap for an Original Resource is a resource from which a list of URIs of Mementos of the Original Resource is available.'
 
   - name: type
     description: 'Refers to a resource identifying the abstract semantic type of which the link''s context is considered to be an instance.'
-    reference: [RFC6903], section 6
+    reference: '[RFC6903], section 6'
 
   - name: up
     description: 'Refers to a parent document in a hierarchy of documents.'
-    reference: [RFC8288]
+    reference: '[RFC8288]'
     notes: 'This relation type registration did not indicate a reference.  Requested by Noah Slater.'
 
   - name: version-history
     description: 'Points to a resource containing the version history for the context.'
-    reference: [RFC5829]
+    reference: '[RFC5829]'
 
   - name: via
     description: Identifies a resource that is the source of the information in the link's context.
-    reference: [RFC4287]
+    reference: '[RFC4287]'
 
   - name: webmention
     description: 'Identifies a target URI that supports the Webmention protcol. This allows clients that mention a resource in some form of publishing process to contact that endpoint and inform it that this resource has been mentioned.'
-    reference: [http://www.w3.org/TR/webmention/]
+    reference: '[http://www.w3.org/TR/webmention/]'
     notes: 'This is a similar "Linkback" mechanism to the ones of Refback, Trackback, and Pingback. It uses a different protocol, though, and thus should be discoverable through its own link relation type.'
 
   - name: working-copy
     description: Points to a working copy for this resource.
-    reference: [RFC5829]
+    reference: '[RFC5829]'
 
   - name: working-copy-of
-    description: 'Points to the versioned resource from which this working copy was obtained.'
-    reference: [RFC5829]
-    notes: 
