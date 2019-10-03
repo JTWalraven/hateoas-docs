@@ -1,0 +1,15 @@
+title: Demo01 Link Relation Types
+description: Just some demo link relation types.
+reference: 'http://somewebsite.com/demo01'
+formats:
+  - text
+  - html
+  - csv
+  - java
+link-relations:
+  - name: custom-link
+    description: Refers to a resource that is the subject of the link's context.
+    reference: '[RFC1149]'
+    notes: Used to link to custom pages.
+
+  - name: other-custom-link

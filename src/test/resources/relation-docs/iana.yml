@@ -9,7 +9,6 @@ link-relations:
   - name: about
     description: Refers to a resource that is the subject of the link's context.
     reference: '[RFC6903], section 2'
-    notes: Used to link about pages.
 
   - name: alternate
     description: Refers to a substitute for this context
@@ -470,3 +469,5 @@ link-relations:
     reference: '[RFC5829]'
 
   - name: working-copy-of
+    description: 'Points to the versioned resource from which this working copy was obtained.'
+    reference: '[RFC5829]'
