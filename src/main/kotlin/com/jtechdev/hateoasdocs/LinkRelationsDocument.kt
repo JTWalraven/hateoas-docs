@@ -10,9 +10,9 @@ import com.fasterxml.jackson.annotation.JsonProperty
  * @since 0.1
  */
 data class LinkRelationsDocument(
-    val title: String,
-    val description: String,
-    val reference: String,
-    val formats: List<String>,
+    val title: String = "Link Relations",
+    val description: String?,
+    val reference: String?,
+    val formats: List<String> = ArrayList(),
     @JsonProperty("link-relations") val linkRelations: List<LinkRelation> = ArrayList()
 )
